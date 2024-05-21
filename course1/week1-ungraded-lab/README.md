@@ -77,7 +77,26 @@ pip install -r requirements.txt
 ```
  
 This command can take a while to run depending on the speed of your internet connection. Once this step completes you should be ready to spin up jupyter lab and begin working on the ungraded lab.
- 
+
+Make sure that you update the dependencies and library after running the 'requirements.txt'
+
+``` bash
+pip install --upgrade cvlib opencv-python-headless Pillow tensorflow
+```
+
+### Virtual Python environment 
+Use a virtual environment: It's generally recommended to use virtual environments to manage your Python dependencies. This allows you to install packages without affecting the system-wide Python installation. Here's how you can create and activate a virtual environment
+
+```bash
+$python3 -m venv myenv
+
+```
+
+```bash
+$source myenv/bin/activate
+
+```
+
 ### 3. Launching Jupyter Lab
  
 Jupyter lab was installed during the previous step so you can launch it with this command:
